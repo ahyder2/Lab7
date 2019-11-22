@@ -1,9 +1,9 @@
-function init(){
-//add your javascrip between these two lines of code
 
 var input = document.getElementById('entryinput');
 var out = document.getElementById('textoutput');
 var entry = document.getElementById('entrybutton');
+function init(){
+//add your javascrip between these two lines of code
 entry.addEventListener('click', AlertMe);
 entry.addEventListener('click', ShowResultsHere);
 }
