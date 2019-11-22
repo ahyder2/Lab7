@@ -7,13 +7,15 @@ function init(){
 in = document.getElementById('entryinput');
 out = document.getElementById('textoutput');
 entry = document.getElementById('entrybutton');
+entry.addEventListener('click', AlertMe);
+entry.addEventListener('click', ShowResultsHere);
+}
+
 function AlertMe(){
 	alert('Asim Hyder: ' + in.value)
 }
 function ShowResultsHere(){
 	out.innerHTML = in.value;
 }
-entry.addEventListener('click', AlertMe);
-entry.addEventListener('click', ShowResultsHere);
 
 window.addEventListener('load', init);
